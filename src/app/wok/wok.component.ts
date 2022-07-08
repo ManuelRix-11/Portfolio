@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WokComponent implements OnInit {
 
+  img1: string = "../assets/images/vstheme.png"
+
   constructor() { }
 
   ngOnInit(): void {
