@@ -1,0 +1,50 @@
+.mail
+{
+    writing-mode: vertical-rl;
+}
+.mail a
+{
+    color: white;
+    display: inline-block;
+    transition: all 300ms ease;
+}
+.mail a:hover
+{
+    color: hsl(173, 43%, 51%);
+    transform: translateY(-5%);
+}
+
+.mail::after
+{
+    content: "";
+    width: .05rem;
+    height: 5rem;
+    position: fixed;
+    bottom: 0;
+    right: 4.7rem;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.contacts::after
+{
+    content: "";
+    width: .05rem;
+    height: 5rem;
+    position: fixed;
+    bottom: 0;
+    left: 4.5rem;
+    background-color: white;
+    border-radius: 50%;
+}
+.contacts a
+{
+    fill:#A8B2D1;
+    display: inline-block;
+    transition: all 300ms ease;
+}
+.contacts a:hover
+{
+    fill: hsl(173, 43%, 51%);
+    transform: translateY(-30%);
+}

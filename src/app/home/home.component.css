@@ -1,0 +1,42 @@
+.cose.lunghe {
+    max-width: 60ch;
+}
+
+.words {
+    width: 6ch;
+}
+
+.words>span {
+    line-height: 6rem;
+    animation: words 6s ease infinite;
+}
+
+@keyframes words {
+    15% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-100%);
+    }
+
+    45% {
+        transform: translateY(-100%);
+    }
+
+    60% {
+        transform: translateY(-200%);
+    }
+
+    75% {
+        transform: translateY(-200%);
+    }
+
+    90% {
+        transform: translateY(-300%);
+    }
+
+    100% {
+        transform: translateY(-300%);
+    }
+}
