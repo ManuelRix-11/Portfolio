@@ -14,4 +14,18 @@ export class NavComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  ngAfterViewInit(): void {
+    let nav = document.getElementById("nav");
+    let prevPos = window.pageYOffset;
+    window.onscroll = function () {
+      let currPos = window.pageYOffset;
+      if (prevPos > currPos)
+        nav!.style.top = "0";
+      else
+        nav!.style.top = "-200px";
+
+      prevPos = currPos;
+    }
+  }
+
 }
