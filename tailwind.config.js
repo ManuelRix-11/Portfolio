@@ -6,11 +6,12 @@ module.exports = {
       colors: {
         hightext: "#60F6D3",
         opalwhite: "#cbd5f6",
-        opacwhite: "#8892af"
+        opacwhite: "#8892af",
+        basebg: "#0A182E"
       },
       height: {
         "0-9": "0.10rem"
-      }    
+      }
     },
   },
   plugins: [],
