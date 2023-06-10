@@ -28,4 +28,17 @@ export class NavComponent implements OnInit {
     }
   }
 
+  scrollTo(ancorId: string)
+  {
+    const element = document.getElementById(ancorId);
+    if(element) {
+      element.scrollIntoView({behavior:'smooth', block: 'start'})
+    }
+  }
+
+  openResume(event: Event) {
+    event.preventDefault();
+    const pdf = "./assets/curriculum.pdf";
+    window.open(pdf, "_blank");
+  }
 }

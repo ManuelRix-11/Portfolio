@@ -4,14 +4,13 @@
         <!-- <img src="" alt="ER" class="absolute w-[1.9rem] h-[1.9rem]"> -->
     </div>
     <ul class="flex flex-rows gap-8 font-mono text-sm items-center">
-        <li class="nav-item text-white transition-colors hover:text-hightext"><a href=""><span
-                    class="mr-1 text-hightext">01.</span> About</a></li>
-        <li class="nav-item text-white transition-colors hover:text-hightext"><a href=""><span
-                    class="mr-1 text-hightext">02.</span> Work</a></li>
-        <li class="nav-item text-white transition-colors hover:text-hightext"><a href=""><span
-                    class="mr-1 text-hightext">03.</span> Contact</a></li>
+        <li class="nav-item text-white transition-colors hover:text-hightext"><a href="javascript:void(0)"
+                (click)="scrollTo('about')"><span class="mr-1 text-hightext">01.</span> About</a></li>
+        <li class="nav-item text-white transition-colors hover:text-hightext"><a href="javascript:void(0)"
+                (click)="scrollTo('work')"><span class="mr-1 text-hightext">02.</span> Work</a></li>
         <li class="nav-item"><a href=""
-                class="resume text-hightext py-2 px-4 border rounded-md border-hightext text-sm font-mono hover:bg-hightext transition-colors hover:bg-opacity-10">Resume</a>
+                class="resume text-hightext py-2 px-4 border rounded-md border-hightext text-sm font-mono hover:bg-hightext transition-colors hover:bg-opacity-10"
+                (click)="openResume($event)">Resume</a>
         </li>
     </ul>
 </nav>
