@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { AboutComponent } from './about/about.component';
 import { WokComponent } from './wok/wok.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { WokComponent } from './wok/wok.component';
     HomeComponent,
     ContactsComponent,
     AboutComponent,
-    WokComponent
+    WokComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

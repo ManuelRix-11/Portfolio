@@ -32,7 +32,14 @@ export class NavComponent implements OnInit {
   {
     const element = document.getElementById(ancorId);
     if(element) {
-      element.scrollIntoView({behavior:'smooth', block: 'start'})
+      let offset = 50;
+      let elementPosition = element.getBoundingClientRect().top;
+      let offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
     }
   }
 
