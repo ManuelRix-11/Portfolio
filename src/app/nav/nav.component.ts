@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavComponent implements OnInit {
 
   path: string = "../assets/images/profile.jpg";
-
+  logo: string = "../assets/images/logo-modified.png";
   constructor() { }
 
   ngOnInit(): void {
