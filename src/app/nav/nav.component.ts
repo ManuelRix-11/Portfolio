@@ -45,7 +45,7 @@ export class NavComponent implements OnInit {
 
   openResume(event: Event) {
     event.preventDefault();
-    const pdf = "./assets/curriculum.pdf";
+    const pdf = "./assets/EmanueleRagozziniCV.pdf";
     window.open(pdf, "_blank");
   }
 }
